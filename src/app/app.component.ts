@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-todo';
+  title = 'Todo List';
 }
+
+// https://www.youtube.com/watch?v=Fdf5aTYRW0E 
+// 34 minutes in
