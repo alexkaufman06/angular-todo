@@ -17,9 +17,17 @@ export class TodoItemComponent implements OnInit {
   setClasses() {
     const classes = {
       todo: true,
-      'is-completed': this.todo.completed
+      'is-complete': this.todo.completed // DYNAMIC CLASS BINDING
     };
     return classes;
+  }
+
+  onToggle(todo) {
+    todo.completed = !todo.completed;
+  }
+
+  onDelete(todo) {
+    console.log('delete', todo);
   }
 
 }
