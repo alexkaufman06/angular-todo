@@ -6,8 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Todo List';
+  title = '<:Todos:>';
 }
 
 // https://www.youtube.com/watch?v=Fdf5aTYRW0E 
 // 34 minutes in
+
+// THIS IS CLI COMMAND FOR GENERATING COMPONENTS
+// ng generate component components/Todos
+// ng g c <= SHORTCUT FOR GENERATING COMPONENTS
