@@ -9,7 +9,7 @@ export class AppComponent {
   title = '<:Todos:>';
 }
 
-// https://www.youtube.com/watch?v=Fdf5aTYRW0E 
+// https://www.youtube.com/watch?v=Fdf5aTYRW0E
 // 45:22 minutes in
 
 // THIS IS CLI COMMAND FOR GENERATING COMPONENTS
