@@ -10,7 +10,7 @@ export class AppComponent {
 }
 
 // https://www.youtube.com/watch?v=Fdf5aTYRW0E
-// 45:22 minutes in
+// 56:57 minutes in
 
 // THIS IS CLI COMMAND FOR GENERATING COMPONENTS
 // ng generate component components/Todos
