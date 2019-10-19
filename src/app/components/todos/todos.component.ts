@@ -18,4 +18,8 @@ export class TodosComponent implements OnInit {
     }); // subscribe is like .then() with the observable creating asynchronous data
   }
 
+  deleteTodo(todo: Todo) {
+    this.todos = this.todos.filter(t => t.id !== todo.id);
+    this.todoService.deleteTodo(todo).subscribe();
+  }
 }
