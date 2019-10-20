@@ -15,11 +15,17 @@ export class TodosComponent implements OnInit {
   ngOnInit() {
     this.todoService.getTodos().subscribe(todos => {
       this.todos = todos;
-    }); // subscribe is like .then() with the observable creating asynchronous data
+    }); // subscribe is like .then() on promise with the observable creating asynchronous data
   }
 
   deleteTodo(todo: Todo) {
     this.todos = this.todos.filter(t => t.id !== todo.id);
     this.todoService.deleteTodo(todo).subscribe();
+  }
+
+  addTodo(todo: Todo) {
+    this.todoService.addTodo(todo).subscribe(todoReturn => {
+      this.todos.push(todoReturn);
+    });
   }
 }
